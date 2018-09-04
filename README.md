@@ -1,4 +1,4 @@
-# ENAS-keras ModelBuilder
+# ENAS-keras Fixed Architecture Builder
 - This project is to implement enas fixed architecture model in keras. It doesn't include whole training code. It only creates  python script of fixed architecture model.
 - Cifar10 micro and ptb architecture are in progress.
 - Cifar10 macro architecture is completed. 
