@@ -10,7 +10,7 @@
 ## Run 
 bash run.sh
 
-- You can find example output script name Model.py in output folder.
+- You can find example output script , Model.py, in output folder.
 - To obtain enas fixed architecture, you can use pytorch,tensorflow or keras implementations.
 
 ## Differences from Original Implementation
