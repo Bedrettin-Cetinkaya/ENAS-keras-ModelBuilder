@@ -1,0 +1,32 @@
+export PYTHONPATH="$(pwd)"
+fixed_arc="2"
+fixed_arc="$fixed_arc 2 0"
+fixed_arc="$fixed_arc 3 0 1"
+fixed_arc="$fixed_arc 1 0 0 1"
+fixed_arc="$fixed_arc 0 1 0 0 0"
+fixed_arc="$fixed_arc 1 1 1 0 0 1"
+fixed_arc="$fixed_arc 0 1 0 0 0 0 0"
+fixed_arc="$fixed_arc 3 0 0 0 0 0 0 0"
+fixed_arc="$fixed_arc 0 0 1 1 0 0 0 0 0"
+fixed_arc="$fixed_arc 3 1 1 1 1 0 0 0 0 0"
+fixed_arc="$fixed_arc 0 1 0 0 1 0 0 0 0 0 1"
+fixed_arc="$fixed_arc 1 0 1 0 1 1 1 0 0 0 1 0"
+fixed_arc="$fixed_arc 2 0 1 0 1 0 0 0 1 1 0 0 0"
+fixed_arc="$fixed_arc 3 0 1 1 1 0 0 1 0 0 0 0 0 0"
+fixed_arc="$fixed_arc 0 0 0 0 0 1 1 0 0 1 0 1 0 1 0"
+fixed_arc="$fixed_arc 2 1 1 1 1 0 1 0 0 0 0 0 0 0 0 0"
+fixed_arc="$fixed_arc 1 0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 1"
+fixed_arc="$fixed_arc 0 1 1 1 1 1 1 0 1 0 0 0 0 0 0 0 0 0"
+fixed_arc="$fixed_arc 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 1 0 0 0"
+fixed_arc="$fixed_arc 3 0 0 1 0 1 0 0 0 1 1 1 1 1 1 0 0 0 0 1"
+fixed_arc="$fixed_arc 2 1 0 0 1 0 0 0 1 1 1 0 0 1 1 1 1 0 1 0 1"
+fixed_arc="$fixed_arc 3 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 1 1 0 1 1"
+fixed_arc="$fixed_arc 2 0 0 1 1 0 1 0 1 0 0 1 0 1 0 0 0 1 1 0 0 0 1"
+fixed_arc="$fixed_arc 3 1 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 1 1 0 1 1 0"
+
+
+python main.py --out_filters=96  \
+  --fixed_arc="${fixed_arc}"  \
+  --num_layers=24 \
+  --output_dir="output" \
+  --reset_output_dir=1
