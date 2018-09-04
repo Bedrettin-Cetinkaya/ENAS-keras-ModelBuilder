@@ -13,7 +13,9 @@ bash run.sh
 - You can find example output script name Model.py in output folder.
 - To obtain enas fixed architecture, you can use pytorch,tensorflow or keras implementations.
 
-
+## Differences from Original Implementation
+- Bias is used.
+- In the pooling stage, padding and cropping operations are not used.
 
 ## Complete implementations of ENAS
 - [Tensorflow](https://github.com/melodyguan/enas)
